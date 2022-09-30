@@ -275,6 +275,7 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 */
+
 public int P11(){
     int[,] arr=new int[20,20];
     string str=@"08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
@@ -320,6 +321,7 @@ public int P11(){
             int rightVal=j+4-1;
             
             int product=1;
+            int y=1;
             int tempProduct=1;
             //top
             if(topVal>=0){
@@ -349,7 +351,7 @@ public int P11(){
                 }
             }
         }
-        
+        Console.WriteLine("GitActions");
     }
     return 0;
 }
